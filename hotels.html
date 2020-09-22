@@ -4,150 +4,153 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Гостиницы в Седоне</title>
+	<title>Гостиницы в Седоне</title>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <header>
-    <a href="index.html">
+<body class="page-body">
+  <header class="main-header">
+    <a class="main-header__logo" href="index.html">
       <img src="https://via.placeholder.com/138x70?text=logo" width="138" height="70" alt="Логотип Седона">
     </a>
-    <nav>
-      <ul>
-        <li>
-          <a href="#">Информация</a>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Информация</a>
         </li>
-        <li>
-          <a href="#">Фото и видео</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Фото и видео</a>
         </li>
-        <li>
-          <a href="#">Карта штата</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Карта штата</a>
         </li>
-        <li>
-          <a>Гостиницы</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--active">Гостиницы</a>
         </li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section>
-      <h1>Поиск жилья в Седоне</h1>
-      <!-- Здесь будет форма поиска с фоновой картинкой -->
+    <section class="booking-hotels">
+      <h1 class="visually-hidden">Поиск жилья в Седоне</h1>
+      <form class="booking-form">
+        <!-- Здесь будет форма поиска с фоновой картинкой -->
+      </form>
 
-      <div>
-        <p>Найдено: 3</p>
-        <p>Сортировка:</p>
-        <ul>
-          <li>По цене</li>
-          <li>По типу</li>
-          <li>По рейтингу</li>
+      <div class="booking-sort">
+        <p class="booking-sort__number">Найдено: 3</p>
+        <p class="booking-sort__title">Сортировка:</p>
+        <ul class="booking-sort__list">
+          <li class="booking-sort__item booking-sort--active">По цене</li>
+          <li class="booking-sort__item">По типу</li>
+          <li class="booking-sort__item">По рейтингу</li>
         </ul>
         <div>
-          <button type="button" disabled>По возрастанию</button>
-          <button type="button">По убыванию</button>
+          <button class="booking-sort__arrow booking-sort__arrow--up" type="button" disabled>По возрастанию</button>
+          <button class="booking-sort__arrow booking-sort__arrow--down" type="button">По убыванию</button>
         </div>
       </div>
 
-      <div>
-        <ul>
-          <li>
-            <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Отель Amara Resort & Spa">
-            <div>
-              <h2>Amara Resort & Spa</h2>
-              <p>
-                <span>Гостиница</span>
-                <span>От 4000 Р.</span>
-              </p>
-              <p>
-                <a href="#">Подробнее</a>
-                <a href="#">Забронировать</a>
-              </p>
+      <ul class="booking-results">
+        <li class="booking-results__item">
+          <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Отель Amara Resort & Spa">
+          <div class="booking-results__info">
+            <h2 class="booking-results__title">Amara Resort & Spa</h2>
+            <p class="booking-results__specs">
+              <span>Гостиница</span>
+              <span>От 4000 Р.</span>
+            </p>
+            <p class="booking-results__links">
+              <a class="small-btn booking-results__more" href="#">Подробнее</a>
+              <a class="small-btn booking-results__book" href="#">Забронировать</a>
+            </p>
+          </div>
+          <div class="booking-results__rating">
+            <div class="booking-results__rating-stars">
+              <img src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
+              <img src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
+              <img src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
+              <img src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
             </div>
-            <div>
-              <div>
-                <img src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
-								<img src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
-								<img src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
-								<img src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
-              </div>
-              <p>Рейтинг: 8,5</p>
+            <p class="booking-results__rating-text">Рейтинг: 8,5</p>
+          </div>
+        </li>
+        <li class="booking-results__item">
+          <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Desert Quail Inn">
+          <div class="booking-results__info">
+            <h2 class="booking-results__title">Desert Quail Inn</h2>
+            <p class="booking-results__specs">
+              <span>Мотель</span>
+              <span>От 3000 Р.</span>
+            </p>
+            <p class="booking-results__links">
+              <a class="small-btn booking-results__more" href="#">Подробнее</a>
+              <a class="small-btn booking-results__book" href="#">Забронировать</a>
+            </p>
+          </div>
+          <div class="booking-results__rating">
+            <div class="booking-results__rating-stars">
+              <img src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
+              <img src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
+              <img src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
             </div>
-          </li>
-          <li>
-            <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Desert Quail Inn">
-            <div>
-              <h2>Desert Quail Inn</h2>
-              <p>
-                <span>Мотель</span>
-                <span>От 3000 Р.</span>
-              </p>
-              <p>
-                <a href="#">Подробнее</a>
-                <a href="#">Забронировать</a>
-              </p>
+            <p class="booking-results__rating-text">Рейтинг: 8,9</p>
+          </div>
+        </li>
+        <li class="booking-results__item">
+          <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Villas at Poco Diablo">
+          <div class="booking-results__info">
+            <h2 class="booking-results__title">Villas at Poco Diablo</h2>
+            <p class="booking-results__specs">
+              <span>Апартаменты</span>
+              <span>От 2000 Р.</span>
+            </p>
+            <p class="booking-results__links">
+              <a class="small-btn booking-results__more" href="#">Подробнее</a>
+              <a class="small-btn booking-results__book" href="#">Забронировать</a>
+            </p>
+          </div>
+          <div class="booking-results__rating">
+            <div class="booking-results__rating-stars">
+              <img src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
+              <img src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
             </div>
-            <div>
-              <div>
-								<img src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
-								<img src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
-								<img src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
-              </div>
-              <p>Рейтинг: 8,9</p>
-            </div>
-          </li>
-          <li>
-            <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Villas at Poco Diablo">
-            <div>
-              <h2>Villas at Poco Diablo</h2>
-              <p>
-                <span>Апартаменты</span>
-                <span>От 2000 Р.</span>
-              </p>
-              <p>
-                <a href="#">Подробнее</a>
-                <a href="#">Забронировать</a>
-              </p>
-            </div>
-            <div>
-              <div>
-								<img src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
-								<img src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
-              </div>
-              <p>Рейтинг: 9,2</p>
-            </div>
-          </li>
-        </ul>
-      </div>
+            <p class="booking-results__rating-text">Рейтинг: 9,2</p>
+          </div>
+        </li>
+      </ul>
     </section>
   </main>
 
-  <footer>
-    <section>
-      <h2>Контакты</h2>
-      <p>#visitSEDONA</p>
-      <a href="tel:+74956660166">тел: +7(495) 666-01-66</a>
+  <footer class="main-footer">
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <p class="contacts__hash-tag">#visitSEDONA</p>
+      <a class="contacts__tel" href="tel:+74956660166">тел: +7(495) 666-01-66</a>
     </section>
 
-    <section>
-      <h2>Соц.сети</h2>
-      <ul>
-        <li>
-          <a href="https://twitter.com">Twitter</a>
+    <section class="social">
+      <h2 class="visually-hidden">Соц.сети</h2>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="https://twitter.com">Twitter</a>
         </li>
-        <li>
-          <a href="https://facebook.com">Facebook</a>
+        <li class="social__item">
+          <a class="social__link" href="https://facebook.com">Facebook</a>
         </li>
-        <li>
-          <a href="https://youtube.com">Youtube</a>
+        <li class="social__item">
+          <a class="social__link" href="https://youtube.com">Youtube</a>
         </li>
       </ul>
     </section>
 
-    <section>
-      <h2>Разработчики сайта</h2>
+    <section class="copyright">
+      <h2 class="visually-hidden">Разработчики сайта</h2>
       <span>Website by</span>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="https://via.placeholder.com/115x41" width="115" height="41" alt="лого HTML Academy">
       </a>
     </section>
