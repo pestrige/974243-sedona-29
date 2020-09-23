@@ -7,8 +7,11 @@
   --transparent-white: rgba(255, 255, 255, 0.3);
   --base-gray: #eeeeee;
   --extra-gray: #f2f2f2;
+  --light-gray: #cacaca;
   --accent-gray: #6a6a6a;
   --blue: #81b3d2;
+  --blue-hover: #669EC0;
+  --blue-active: #5496BD;
   --brown: #766357;
   --brown-hover: #604E43;
   --brown-active: #503E33;
@@ -38,8 +41,8 @@ img {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-	color: var(--extra-black);
-	background-color: var(--extra-gray);
+  color: var(--extra-black);
+  background-color: var(--extra-gray);
   text-transform: uppercase;
 }
 
@@ -65,14 +68,22 @@ input[type="radio"].visually-hidden {
   color: var(--base-black);
 }
 
+.common-title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--base-black);
+}
+
 .item-title--white {
   color: var(--base-white);
 }
 
 /* Main Navigation section*/
 .main-header {
-	background-color: var(--white);
+  background-color: var(--white);
 }
+
 .main-nav {
   font-weight: 700;
   line-height: 26px;
@@ -102,12 +113,12 @@ input[type="radio"].visually-hidden {
 
 /* Promo section */
 .promo {
-	background-color: var(--white);
+  background-color: var(--white);
 }
 
 /* Features section */
 .features {
-	background-color: var(--white);
+  background-color: var(--white);
 }
 
 .features__title {
@@ -131,7 +142,7 @@ input[type="radio"].visually-hidden {
 }
 
 .features-minor {
-	background-color: var(--base-gray);
+  background-color: var(--base-gray);
 }
 
 .features-minor__list {
@@ -176,7 +187,7 @@ input[type="radio"].visually-hidden {
 
 /* Map section */
 .map {
-	background-color: var(--base-gray);
+  background-color: var(--base-gray);
 }
 
 /* Footer section */
@@ -196,9 +207,106 @@ input[type="radio"].visually-hidden {
 }
 
 .social__link {
-	color: inherit;
+  color: inherit;
 }
 
 .copyright {
   line-height: 26px;
+}
+
+/* Hotel Page */
+.booking-sort__title {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--base-black);
+}
+
+.booking-sort__list {
+  list-style: none;
+}
+
+.booking-sort__item {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--transparent-black);
+  cursor: pointer;
+}
+
+.booking-sort__item--active,
+.booking-sort__item:hover,
+.booking-sort__item:focus {
+  color: var(--blue);
+}
+
+.booking-sort__item:active {
+  color: var(--base-black);
+}
+
+.booking-sort__arrow {
+  background-color: var(--light-gray);
+  border: none;
+  cursor: pointer;
+}
+
+.booking-sort__arrow--active,
+button.booking-sort__arrow:active {
+  background-color: var(--blue);
+}
+
+.booking-sort__arrow:hover {
+  background-color: var(--base-black);
+}
+
+.booking-results {
+  list-style: none;
+}
+
+.booking-results__title a {
+  color: inherit;
+}
+
+.booking-results__title a:hover,
+.booking-results__title a:focus {
+  color: var(--blue);
+}
+
+.booking-results__title a:active {
+  color: var(--transparent-black);
+}
+
+.small-btn {
+  padding: 3px 16px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  border: none;
+  color: var(--white);
+  background-color: var(--brown);
+}
+
+.small-btn:hover,
+.small-btn:focus {
+  background-color: var(--brown-hover);
+}
+
+.small-btn:active,
+button.small-btn:active {
+  color: var(--transparent-white);
+  background-color: var(--brown-active);
+}
+
+.booking-results__more {
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+.booking-results__more:hover,
+.booking-results__more:focus {
+  background-color: var(--blue-hover);
+}
+
+.booking-results__more:active,
+button.booking-results__more:active {
+  color: var(--transparent-white);
+  background-color: var(--blue-active);
 }
