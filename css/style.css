@@ -79,7 +79,7 @@ input[type="radio"].visually-hidden {
   color: var(--base-white);
 }
 
-/* Main Navigation section*/
+/* Main Navigation section */
 .main-header {
   background-color: var(--white);
 }
@@ -113,7 +113,7 @@ input[type="radio"].visually-hidden {
 
 /* Promo section */
 .promo {
-  background-color: var(--white);
+  background-color: var(--light-gray);
 }
 
 /* Features section */
