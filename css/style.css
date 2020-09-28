@@ -1,8 +1,8 @@
 /* Variables */
 :root {
   --base-black: #000000;
-	--extra-black: #333333;
-	--logo-black: #231F20;
+  --extra-black: #333333;
+  --logo-black: #231F20;
   --transparent-black: rgba(0, 0, 0, 0.3);
   --white: #ffffff;
   --transparent-white: rgba(255, 255, 255, 0.3);
@@ -10,8 +10,8 @@
   --base-gray: #eeeeee;
   --extra-gray: #f2f2f2;
   --light-gray: #cacaca;
-	--accent-gray: #6a6a6a;
-	--logo-gray: #BDBBBC;
+  --accent-gray: #6a6a6a;
+  --logo-gray: #BDBBBC;
   --blue: #81b3d2;
   --blue-hover: #669EC0;
   --blue-active: #5496BD;
@@ -325,6 +325,8 @@ input[type="radio"].visually-hidden {
 /* Last Features with numbers */
 
 .features-minor {
+  position: relative;
+  z-index: 2;
   background-color: var(--base-gray);
 }
 
@@ -362,13 +364,20 @@ input[type="radio"].visually-hidden {
 /* Booking Form section */
 
 .booking {
-	position: relative;
+  position: relative;
   text-align: center;
 }
 
+.booking-wrapper {
+  position: relative;
+  z-index: 2;
+  background-color: var(--white);
+}
+
 .booking__title {
-  margin-top: 59px;
-  margin-bottom: 31px;
+  margin: 0;
+  padding-top: 59px;
+  padding-bottom: 31px;
   font-size: 30px;
   line-height: 24px;
   font-weight: 700;
@@ -409,14 +418,20 @@ input[type="radio"].visually-hidden {
 /* Form Section */
 
 .booking__form {
-	position: absolute;
-	width: 568px;
-	height: 395px;
-	left: calc(50% - 568px / 2);
-	bottom: -395px;
-	padding: 55px;
-	background-color: var(--white);
-	box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  position: absolute;
+  z-index: 1;
+  width: 568px;
+  height: 395px;
+  left: calc(50% - 568px / 2);
+  bottom: -395px;
+  padding: 55px;
+  background-color: var(--white);
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  transition: bottom 1s;
+}
+
+.booking__form--hide {
+  bottom: 0;
 }
 
 /* Map section */
@@ -533,6 +548,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   width: 115px;
   height: 41px;
+  margin-top: -8px;
   background-color: var(--logo-black);
   -webkit-mask: url(../img/logo-htmlacademy.svg) no-repeat 50% 50%;
   mask: url(../img/logo-htmlacademy.svg) no-repeat 50% 50%;
@@ -540,11 +556,11 @@ input[type="radio"].visually-hidden {
 
 .copyright__link:hover,
 .copyright__link:focus {
-	background-color: var(--blue);
+  background-color: var(--blue);
 }
 
 .copyright__link:active {
-	background-color: var(--logo-gray);
+  background-color: var(--logo-gray);
 }
 
 /* Hotel Page */
