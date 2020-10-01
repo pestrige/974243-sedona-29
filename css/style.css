@@ -501,17 +501,14 @@ input[type="radio"].visually-hidden {
 }
 
 .social__link {
-  display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
   width: 46px;
   height: 48px;
-  padding-top: 16px;
   color: inherit;
   text-align: center;
   background-color: var(--blue);
-}
-
-.social__link--facebook {
-  padding-top: 13px;
 }
 
 .social__link:hover,
@@ -789,8 +786,8 @@ button.booking-results__more:active {
 	justify-content: flex-end;
 }
 
-.booking-results__star-img + .booking-results__star-img {
-	margin-left: 4px;
+.booking-results__star-img:not(:last-child) {
+	margin-right: 4px;
 }
 
 .booking-results__rating-text {
