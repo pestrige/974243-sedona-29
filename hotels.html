@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Гостиницы в Седоне</title>
-	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+  <title>Гостиницы в Седоне</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
@@ -18,16 +18,16 @@
     <nav class="main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Информация</a>
+          <a class="main-nav__link link" href="#">Информация</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Фото и видео</a>
+          <a class="main-nav__link link" href="#">Фото и видео</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Карта штата</a>
+          <a class="main-nav__link link" href="#">Карта штата</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--active">Гостиницы</a>
+          <a class="main-nav__link link link--active">Гостиницы</a>
         </li>
       </ul>
     </nav>
@@ -36,22 +36,26 @@
   <main>
     <section class="booking-hotels">
       <h1 class="visually-hidden">Поиск жилья в Седоне</h1>
-      <form class="booking-form">
-        <!-- Здесь будет форма поиска с фоновой картинкой -->
-      </form>
+        <form class="booking-filter">
+          <!-- Здесь будет форма поиска с фоновой картинкой -->
+        </form>
 
       <div class="booking-sort">
         <p class="booking-sort__number common-title">Найдено: 3</p>
         <p class="booking-sort__title">Сортировка:</p>
         <ul class="booking-sort__list">
-          <li class="booking-sort__item booking-sort__item--active">По цене</li>
-          <li class="booking-sort__item">По типу</li>
-          <li class="booking-sort__item">По рейтингу</li>
+          <li class="booking-sort__item booking-sort__item--active">
+						<a href="#"> По цене</li></a>
+          <li class="booking-sort__item">
+						<a href="#"> По типу</li></a>
+          <li class="booking-sort__item">
+						<a href="#"> По рейтингу</li></a>
         </ul>
         <div class="booking-sort__wrapper">
-          <button class="booking-sort__arrow booking-sort__arrow--up" type="button">По возрастанию</button>
-          <button class="booking-sort__arrow booking-sort__arrow--down booking-sort__arrow--active" type="button">По убыванию</button>
-        </div>
+          <button class="booking-sort__arrow booking-sort__arrow--up" type="button" aria-label="По возрастанию"></button>
+          <button class="booking-sort__arrow booking-sort__arrow--down booking-sort__arrow--active" type="button" aria-label="По убыванию"></button>
+				</div>
+				<div class="test-button"></div>
       </div>
 
       <ul class="booking-results">
@@ -61,19 +65,17 @@
             <h2 class="booking-results__title common-title"><a href="#">Amara Resort & Spa</a></h2>
             <p class="booking-results__specs">
               <span>Гостиница</span>
-              <span>От 4000 Р.</span>
-            </p>
-            <p class="booking-results__links">
+              <span class="booking-results__price">От 4000 Р.</span>
               <a class="small-btn booking-results__more" href="#">Подробнее</a>
               <a class="small-btn booking-results__book" href="#">Забронировать</a>
             </p>
           </div>
           <div class="booking-results__rating">
             <div class="booking-results__rating-stars">
-              <img src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
-              <img src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
-              <img src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
-              <img src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
+              <img class="booking-results__star-img" src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
+              <img class="booking-results__star-img" src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
+              <img class="booking-results__star-img" src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
+              <img class="booking-results__star-img" src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
             </div>
             <p class="booking-results__rating-text">Рейтинг: 8,5</p>
           </div>
@@ -84,18 +86,16 @@
             <h2 class="booking-results__title common-title"><a href="#">Desert Quail Inn</a></h2>
             <p class="booking-results__specs">
               <span>Мотель</span>
-              <span>От 3000 Р.</span>
-            </p>
-            <p class="booking-results__links">
+              <span class="booking-results__price">От 3000 Р.</span>
               <a class="small-btn booking-results__more" href="#">Подробнее</a>
               <a class="small-btn booking-results__book" href="#">Забронировать</a>
             </p>
           </div>
           <div class="booking-results__rating">
             <div class="booking-results__rating-stars">
-              <img src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
-              <img src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
-              <img src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
+              <img class="booking-results__star-img" src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
+              <img class="booking-results__star-img" src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
+              <img class="booking-results__star-img" src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
             </div>
             <p class="booking-results__rating-text">Рейтинг: 8,9</p>
           </div>
@@ -106,17 +106,15 @@
             <h2 class="booking-results__title common-title"><a href="#">Villas at Poco Diablo</a></h2>
             <p class="booking-results__specs">
               <span>Апартаменты</span>
-              <span>От 2000 Р.</span>
-            </p>
-            <p class="booking-results__links">
+              <span class="booking-results__price">От 2000 Р.</span>
               <a class="small-btn booking-results__more" href="#">Подробнее</a>
               <a class="small-btn booking-results__book" href="#">Забронировать</a>
             </p>
           </div>
           <div class="booking-results__rating">
             <div class="booking-results__rating-stars">
-              <img src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
-              <img src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
+              <img class="booking-results__star-img" src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
+              <img class="booking-results__star-img" src="img/rating-star.svg" alt="звезда рейтинга отеля" width="19" height="17">
             </div>
             <p class="booking-results__rating-text">Рейтинг: 9,2</p>
           </div>
@@ -126,32 +124,49 @@
   </main>
 
   <footer class="main-footer">
-    <section class="contacts">
+    <section class="footer-item contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <p class="contacts__hash-tag">#visitSEDONA</p>
-      <a class="contacts__tel" href="tel:+74956660166">тел: +7(495) 666-01-66</a>
+      <a class="contacts__tel link" href="tel:+74956660166">тел: +7(495) 666-01-66</a>
     </section>
 
-    <section class="social">
+    <section class="footer-item social">
       <h2 class="visually-hidden">Соц.сети</h2>
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link" href="https://twitter.com">Twitter</a>
+          <a class="social__link" href="https://twitter.com">
+            <span class="visually-hidden">Twitter</span>
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z" />
+            </svg>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://facebook.com">Facebook</a>
+          <a class="social__link social__link--facebook" href="https://facebook.com">
+            <span class="visually-hidden">Facebook</span>
+            <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" />
+            </svg>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://youtube.com">Youtube</a>
+          <a class="social__link" href="https://youtube.com">
+            <span class="visually-hidden">Youtube</span>
+            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" />
+            </svg>
+          </a>
         </li>
       </ul>
     </section>
 
-    <section class="copyright">
+    <section class="footer-item copyright">
       <h2 class="visually-hidden">Разработчики сайта</h2>
-      <span>Website by</span>
+      <span class="copyright__text">Website by</span>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="лого HTML Academy">
+        <span class="visually-hidden">HTML Academy</span>
       </a>
     </section>
 
