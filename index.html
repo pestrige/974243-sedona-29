@@ -129,10 +129,38 @@
           Укажите предполагаемые даты поездки, <br>
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <button class="booking__btn" type="button">Поиск гостиницы в Седоне</button>
+        <button class="booking__btn btn-brown" type="button">Поиск гостиницы в Седоне</button>
       </div>
-      <form class="booking__form">
-        <h3>Здесь будет форма</h3>
+      <form class="booking__form form" method="post" action="https://echo.htmlacademy.ru">
+        <p class="form__checkin">
+          <label class="form__checkin-label" for="checkin-date">Дата заезда:</label>
+          <input class="form__checkin-input input" type="text" name="checkin-date" id="checkin-date"
+            placeholder="24 апреля 2017">
+          <button class="input__calendar" type="button"></button>
+        </p>
+        <p class="form__checkout">
+          <label class="form__checkout-label" for="checkout-date">Дата выезда:</label>
+          <input class="form__checkout-input input" type="text" name="checkout-date" id="checkout-date"
+            placeholder="4 июля 2017">
+          <button class="input__calendar" type="button"></button>
+        </p>
+        <div class="form__guests">
+          <label class="form__adult-label" for="guests-adult">Взрослые:</label>
+          <p class="form__guests-field">
+            <button class="form__guests-btn form__guests-btn--minus" type="button" aria-label="уменьшить"></button>
+            <input class="form__adult-input input" type="number" name="adults" id="guests-adult" value="2" min="1">
+            <button class="form__guests-btn form__guests-btn--plus" type="button" aria-label="увеличить"></button>
+          </p>
+
+          <label class="form__children-label" for="guests-children">Дети:</label>
+          <p class="form__guests-field">
+            <button class="form__guests-btn form__guests-btn--minus" type="button" aria-label="уменьшить"></button>
+            <input class="form__children-input input" type="number" name="childrens" id="guests-children" value="0"
+              min="0">
+            <button class="form__guests-btn form__guests-btn--plus" type="button" aria-label="увеличить"></button>
+          </p>
+        </div>
+        <button class="form__btn btn-blue" type="submit">Найти</button>
       </form>
     </section>
 
@@ -147,7 +175,10 @@
     <section class="footer-item contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <p class="contacts__hash-tag">#visitSEDONA</p>
-      <a class="contacts__tel link" href="tel:+74956660166">тел: +7(495) 666-01-66</a>
+      <p class="contacts__tel">
+        <span>тел:</span>
+        <a class="contacts__tel-link link" href="tel:+74956660166">+7(495) 666-01-66</a>
+      </p>
     </section>
 
     <section class="footer-item social">
