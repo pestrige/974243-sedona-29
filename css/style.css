@@ -499,6 +499,10 @@ button.btn-blue:active {
 	background-color: var(--label-hover-gray);
 }
 
+.form__guests-btn:hover ~ .input {
+	background-color: var(--label-hover-gray);
+}
+
 .input:focus {
 	outline: 2px solid var(--border-gray);
 	background-color: var(--extra-gray);
@@ -619,13 +623,23 @@ button.btn-blue:active {
 /* Map section */
 
 .map {
-  height: 593px;
-  background-color: var(--base-gray);
+	height: 593px;
+	background-color: var(--base-gray);
+	/* background-image: url("../img/map.jpg"); */
+}
+
+.map iframe {
+	width: 1200px;
+	height: 593px;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 0;
 }
 
 /* Footer section */
 
 .main-footer {
+	z-index: 1;
   grid-column: 1/2;
   grid-row: 2/3;
   align-self: end;
