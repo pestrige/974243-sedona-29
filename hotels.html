@@ -7,7 +7,7 @@
   <title>Гостиницы в Седоне</title>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-body">
@@ -66,7 +66,8 @@
               <label for="motel">Мотель</label>
             </li>
             <li class="booking-filter__option apartments-type">
-              <input class="booking-filter__input visually-hidden" type="checkbox" name="apartment" id="apartment" checked>
+              <input class="booking-filter__input visually-hidden" type="checkbox" name="apartment" id="apartment"
+                checked>
               <label for="apartment">Апартаменты</label>
             </li>
           </ul>
@@ -88,8 +89,8 @@
               </div>
               <div class="price-set__toggle toggle-min" tabindex="0"></div>
               <div class="price-set__toggle toggle-max" tabindex="0"></div>
-						</div>
-						<button class="price-set__btn" type="submit">Показать</button>
+            </div>
+            <button class="price-set__btn" type="submit">Показать</button>
           </div>
         </fieldset>
       </form>
@@ -99,11 +100,14 @@
         <p class="booking-sort__title">Сортировка:</p>
         <ul class="booking-sort__list">
           <li class="booking-sort__item booking-sort__item--active">
-            <a href="#"> По цене</li></a>
+            <a href="#"> По цене</a>
+          </li>
           <li class="booking-sort__item">
-            <a href="#"> По типу</li></a>
+            <a href="#"> По типу</a>
+          </li>
           <li class="booking-sort__item">
-            <a href="#"> По рейтингу</li></a>
+            <a href="#"> По рейтингу</a>
+          </li>
         </ul>
         <div class="booking-sort__wrapper">
           <button class="booking-sort__arrow booking-sort__arrow--up" type="button"
