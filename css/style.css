@@ -19,7 +19,8 @@
   --light-gray: #cacaca;
   --accent-gray: #6a6a6a;
   --border-gray: #e5e5e5;
-  --logo-gray: #BDBBBC;
+	--logo-gray: #BDBBBC;
+	--shadow: rgba(0, 1, 1, 0.2);
   --controls-gray: #a9a9a9;
   --label-hover-gray: #ebebeb;
   --blue: #81b3d2;
@@ -65,7 +66,7 @@ img {
   color: var(--extra-black);
   background-color: var(--white);
   text-transform: uppercase;
-  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  box-shadow: 0px 5px 15px var(--shadow);
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -149,7 +150,7 @@ button.btn-blue:active {
 }
 
 .item-title--white {
-  color: var(--base-white);
+  color: var(--white);
 }
 
 /* Grid for index.html */
@@ -293,7 +294,8 @@ button.btn-blue:active {
   display: inline-block;
   width: 150px;
   margin: 0;
-  margin-bottom: 26px;
+	margin-bottom: 26px;
+	vertical-align: middle;
 }
 
 .features-item__number {
@@ -457,7 +459,7 @@ button.btn-blue:active {
   left: calc(50% - 568px / 2);
   bottom: -395px;
   background-color: var(--white);
-  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  box-shadow: 0px 7px 15px var(--shadow);
   transition: bottom 1s;
 }
 
@@ -766,7 +768,8 @@ button.btn-blue:active {
   display: inline-block;
   width: 115px;
   height: 41px;
-  margin-top: -8px;
+	margin-top: -8px;
+	vertical-align: middle;
   background-color: var(--logo-black);
   -webkit-mask: url(../img/logo-htmlacademy.svg) no-repeat 50% 50%;
   mask: url(../img/logo-htmlacademy.svg) no-repeat 50% 50%;
@@ -991,7 +994,7 @@ button.btn-blue:active {
   color: var(--white);
   text-transform: uppercase;
   background-color: transparent;
-  border: 2px solid #FFFFFF;
+  border: 2px solid var(--white);
   border-radius: 2px;
   cursor: pointer;
   transition:
